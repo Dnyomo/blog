@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<config>
+    <menu>
+        <blog_menu translate="title" module="blog">
+            <title>MageExtend Blog</title>
+            <sort_order>75</sort_order>
+            <children>
+                <blog_menu_sub_1 translate="title" module="blog">
+                <title>Blog Categories</title>
+                <sort_order>997</sort_order>
+                <action>adminhtml/blogcategories/</action>
+                </blog_menu_sub_1>
+            </children>
+            <children>
+                <blog_menu_sub_2 translate="title" module="blog">
+                <title>Blog Posts</title>
+                <sort_order>998</sort_order>
+                <action>adminhtml/blogposts/</action>
+                </blog_menu_sub_2>
+            </children>
+            <children>
+                <blog_menu_sub_3 translate="title" module="blog">
+                    <title>Blog Comments</title>
+                    <sort_order>999</sort_order>
+                    <action>adminhtml/blogcomments/</action>
+                </blog_menu_sub_3>
+            </children>
+        </blog_menu>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <blog_menu translate="title" module="blog">
+                        <title>MageExtend Blog</title>
+                    </blog_menu>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
