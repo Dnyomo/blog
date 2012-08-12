@@ -20,6 +20,7 @@ CREATE TABLE " . $installer->getTable('blog/category') . "(
 `category_id` int(11) NOT NULL AUTO_INCREMENT,
 `parent_id` int(11) NOT NULL,
 `name` varchar(50) NOT NULL,
+`status` varchar(50) NOT NULL,
 PRIMARY KEY (`category_id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;");
 
@@ -31,6 +32,7 @@ CREATE TABLE " . $installer->getTable('blog/post') . "(
 `author` varchar(50) DEFAULT NULL,
 `tags` varchar(400) DEFAULT NULL,
 `content` text DEFAULT NULL,
+`status` varchar(50) NOT NULL,
 `timestamp` timestamp NOT NULL default CURRENT_TIMESTAMP,
 PRIMARY KEY (`post_id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;");
