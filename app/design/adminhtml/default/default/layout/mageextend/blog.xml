@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default translate="label" module="page">
+        <reference name='head'>
+            <action method="addCss">
+                <stylesheet>mageextend/blog/css/adminblog.css</stylesheet>
+            </action>
+        </reference>
+    </default>
+
+    <adminhtml_blogcategories_index>
+        <reference name="left">
+            <block type="core/text_list" name="cat_tabs" output="toHtml">
+                <block type="blog/adminhtml_category_tab_category" name="category_tab" />
+            </block>
+        </reference>
+        <reference name="content">
+            <block type="core/text_list" name="cat_form" output="toHtml">
+                <block type="blog/adminhtml_category_form_category" name="category_form" />
+            </block>
+        </reference>
+    </adminhtml_blogcategories_index>
+
+</layout>

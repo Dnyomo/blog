@@ -72,18 +72,18 @@
     <adminhtml>
         <layout>
             <updates>
-                <myaccount>
+                <blog>
                     <file>mageextend/blog.xml</file>
-                </myaccount>
+                </blog>
             </updates>
         </layout>
     </adminhtml>
     <frontend>
         <layout>
             <updates>
-                <myaccount>
+                <blog>
                     <file>mageextend/blog.xml</file>
-                </myaccount>
+                </blog>
             </updates>
         </layout>
     </frontend>
