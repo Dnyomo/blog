@@ -21,4 +21,16 @@
         </reference>
     </adminhtml_blogcategories_index>
 
+    <adminhtml_blogposts_index>
+        <reference name="content">
+            <block type="blog/adminhtml_post_post" name="post_grid" />
+        </reference>
+    </adminhtml_blogposts_index>
+
+    <adminhtml_blogcomments_index>
+        <reference name="content">
+            <block type="blog/adminhtml_comment_comment" name="comment_grid" />
+        </reference>
+    </adminhtml_blogcomments_index>
+
 </layout>
